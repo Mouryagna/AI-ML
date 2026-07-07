@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length_input",
+        "paper_input",
+        "style_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\n        Please summarize the research paper titled \"{paper_input}\" according to the following specifications:\n\n        Explanation Style:\n        {style_input}\n\n        Explanation Length:\n        {length_input}\n\n        Instructions:\n\n        1. Mathematical Details\n           - Include all important mathematical equations from the paper whenever applicable.\n           - Explain every equation in a simple and intuitive manner.\n           - If the selected explanation style is \"Mathematical\", provide detailed derivations where appropriate.\n           - If the selected explanation style is \"Code-Oriented\", include simple Python code snippets or pseudocode whenever applicable.\n\n        2. Key Concepts\n           - Explain the core idea of the paper step by step.\n           - Describe the architecture or methodology clearly.\n           - Explain why the proposed approach works better than previous methods.\n           - Highlight the main contributions.\n\n        3. Analogies\n           - Use simple real-world analogies wherever possible.\n\n        4. Technical Accuracy\n           - Never hallucinate.\n           - If information is unavailable in the paper, reply:\n             \"Insufficient information available.\"\n\n        5. Output Quality\n           - Keep the explanation clear, accurate, and aligned with the selected explanation style and explanation length.\n        ",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
