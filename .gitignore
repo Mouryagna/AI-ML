@@ -2,3 +2,4 @@
 /.venv
 /4-LangChain/.env
 **/.env
+6-fastapi/0-content

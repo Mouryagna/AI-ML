@@ -67,3 +67,7 @@ bs4
 langgraph
 cassio
 tiktoken
+
+langchain-anthropic
+langchain-google-genai
+langchain-ollama
