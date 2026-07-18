@@ -3,3 +3,5 @@
 /4-LangChain/.env
 **/.env
 7-fastapi/0-content
+
+**/dataset
