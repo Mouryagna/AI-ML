@@ -71,3 +71,5 @@ tiktoken
 langchain-anthropic
 langchain-google-genai
 langchain-ollama
+
+langgraph-checkpoint-sqlite
