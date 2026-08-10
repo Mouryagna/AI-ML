@@ -1,7 +1,7 @@
 from langgraph.graph import START,StateGraph,END
 from typing import TypedDict,Annotated
 from langchain_core.messages import BaseMessage,HumanMessage
-from langchain_ollama import ChatOllama
+from langchain_openai import ChatOpenAI
 from langgraph.graph.message import add_messages
 from langgraph.checkpoint.sqlite import SqliteSaver
 import sqlite3
@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model=ChatOllama(model="llama3.1:latest")
+model=ChatOpenAI()
 class ChatState(TypedDict):
 
     messages:Annotated[list[BaseMessage],add_messages] #Base - any messages AI,HUMAN,System
